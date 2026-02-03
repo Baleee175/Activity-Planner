@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>Smart Activity Planner</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#4f46e5">
+</head>
+<body>
+
+<header class="app-header">
+<h1>⚡ Smart Activity Planner</h1>
+<p>Plan • Track • Reflect</p>
+
+  <div class="notif-wrapper">
+    <button id="notifBtn" class="notif-btn">
+      🔔 <span id="notifBadge" class="notif-badge hidden">0</span>
+    </button>
+
+    <div id="notifPopup" class="notif-popup hidden">
+      <h4>⏰ Deadline Mendekat</h4>
+      <div id="notifList"></div>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- FORM PANEL -->
+  <section class="panel glass">
+    <h2>➕ Tambah Aktivitas</h2>
+
+    <select id="type">
+      <option value="planner">Planner</option>
+      <option value="history">Riwayat</option>
+    </select>
+
+    <input id="title" placeholder="Nama kegiatan" />
+    <input id="task" placeholder="Tugas" />
+    <input id="date" type="date" />
+    <input id="time" type="time" />
+    <input id="link" placeholder="Link kegiatan (opsional)" />
+    <textarea id="note" placeholder="Catatan"></textarea>
+
+    <button id="addBtn">Tambah Aktivitas</button>
+  </section>
+
+    <!-- CONTENT -->
+    <section class="content glass">
+    <div class="tabs">
+        <button data-tab="planner" class="active">Planner</button>
+        <button data-tab="done">Selesai</button>
+        <button data-tab="history">Riwayat</button>
+    </div>
+
+    <!-- YANG DISCROLL -->
+    <div class="list-scroll">
+        <div id="list"></div>
+    </div>
+    </section>
+    
+</main>
+
+<footer class="footer">
+  © 2026 <strong>Iqbal Julyansyah</strong> • Smart Activity Planner
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
