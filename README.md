@@ -1,9 +1,7 @@
 ---
-
 # ⚡ Smart Activity Planner
 
 **Smart Activity Planner** adalah aplikasi web produktivitas modern berbasis **Vanilla JavaScript** dengan konsep **Plan • Track • Reflect**, dilengkapi notifikasi deadline pintar dan dukungan **Progressive Web App (PWA)**.
-
 ---
 
 ## ✨ Preview Singkat
